@@ -1,4 +1,4 @@
-import LiveClock from './clock';
+import LiveClock from './Clock.jsx';
 import './App.css'
 
 const openMailInNewTab = () => {
@@ -8,7 +8,7 @@ const openMailInNewTab = () => {
   mailtoLink.click();
 }
 
-function App() {
+const App = () => {
 
   return (
     <>
