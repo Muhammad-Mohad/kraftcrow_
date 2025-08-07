@@ -1,8 +1,7 @@
-import { useState } from 'react'
 import LiveClock from './clock';
 import './App.css'
 
-function openMailInNewTab() {
+const openMailInNewTab = () => {
   const mailtoLink = document.createElement('a');
   mailtoLink.href = 'mailto:hey@kraftcrow.com?subject=Get%20More%20Information';
   mailtoLink.target = '_blank';
@@ -10,7 +9,6 @@ function openMailInNewTab() {
 }
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
@@ -18,10 +16,10 @@ function App() {
         <div class="min-w-[800px]">
 
           <div class="lg:flex lg:flex-row-reverse lg:mt-10 lg:mr-10 hidden">
-            <img src="/10.svg" className='w-10 h-auto' />
+            <img src="/10.svg" class='w-10 h-auto' />
           </div>
           <div class="flex justify-center mt-10 lg:flex-none lg:justify-start lg:ml-10 lg:mr-auto lg:mt-0">
-            <img src="/15.svg" className='w-100 h-auto' />
+            <img src="/15.svg" class='w-100 h-auto' />
           </div>
           <div class="relative mt-90">
             <div class="flex justify-center">
