@@ -1,16 +1,5 @@
 deployment:
   tasks:
-    # Set the deploy path
     - export DEPLOYPATH=/home/ementent/public_html/
-
-    # Move into repo folder
-    - cd /home/ementent/public_html/kraftcrow.com
-
-    # Install dependencies
-    - /bin/npm install
-
-    # Build Vite project
-    - /bin/npm run build
-
-    # Copy built files to public_html
     - /bin/cp -R dist/* $DEPLOYPATH
+
