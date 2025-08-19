@@ -1,5 +1,5 @@
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/ementent/public_html/kraftcrow.com/
+    - export DEPLOYPATH=/home/ementent/public_html/
     - /bin/cp -R dist/* $DEPLOYPATH
 
